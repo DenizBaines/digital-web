@@ -117,3 +117,26 @@
     gap: 0.8rem;
   }
 }
+
+@media (max-width: 480px) {
+  .footer-top {
+    gap: 2rem;
+  }
+
+  .footer-info, .footer-map {
+    min-width: 100%;
+  }
+
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+
+  .footer-locations div h4 {
+    font-size: 0.9rem;
+  }
+
+  .footer-locations div p {
+    font-size: 0.8rem;
+  }
+}
+
