@@ -1,0 +1,497 @@
+/* File: components/career/Career.css */
+
+.career-page {
+  scroll-behavior: smooth;
+  background-color: #1D49AF;
+  color: #fff;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.career-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0;
+  background: #1D49AF;
+  position: relative;
+}
+
+.career-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.career-hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.career-hero-title {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  margin: 0 0 2rem 0;
+  line-height: 1.1;
+  background: #FFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.career-title-divider {
+  width: 8rem;
+  height: 3px;
+  background: #FFF;
+  border-radius: 2px;
+  margin: 0 auto 2rem auto;
+}
+
+.career-hero-subtitle {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #FFF;
+  margin: 0 0 2rem 0;
+}
+
+.career-hero-description {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  color: #d1d5db;
+  margin: 0 0 3rem 0;
+  line-height: 1.8;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.career-hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-stat {
+  text-align: center;
+}
+
+.hero-stat-number {
+  display: block;
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 700;
+  background: linear-gradient(135deg, #fff 0%, #ccc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.hero-stat-label {
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* Common Section Styles */
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 2rem 0;
+  background: #FFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-divider {
+  width: 6rem;
+  height: 2px;
+  background: #FFF;
+  margin: 0 auto 4rem auto;
+  border-radius: 2px;
+}
+
+/* Why Join Us Section */
+.why-join-section {
+  padding: 8rem 0;
+  background: #1D49AF;
+}
+
+.why-join-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.benefit-card {
+  padding: 3rem 2rem;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(17, 17, 17, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+.benefit-card:hover {
+  border-color: #666;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.5rem auto;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: scale(1.1);
+}
+
+.benefit-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.benefit-title {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #fff;
+}
+
+.benefit-description {
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  color: #d1d5db;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Jobs Section */
+.jobs-section {
+  padding: 8rem 0;
+  background: #1D49AF;
+}
+
+.jobs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.job-card {
+  padding: 2.5rem 2rem;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #111 0%, #000 100%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+}
+
+.job-card:hover {
+  border-color: #666;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.job-title {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.job-department {
+  background: linear-gradient(135deg, #333 0%, #222 100%);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.job-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.job-location,
+.job-type,
+.job-experience {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.job-location svg,
+.job-type svg,
+.job-experience svg {
+  width: 16px;
+  height: 16px;
+}
+
+.job-description {
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  color: #d1d5db;
+  margin: 0 0 2rem 0;
+  line-height: 1.6;
+}
+
+.apply-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #333 0%, #222 100%);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.apply-button:hover {
+  background: linear-gradient(135deg, #444 0%, #333 100%);
+  transform: translateY(-2px);
+}
+
+.apply-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Job Modal */
+.job-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.job-modal {
+  background: linear-gradient(135deg, #111 0%, #000 100%);
+  border: 1px solid #333;
+  border-radius: 1rem;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem 0 2rem;
+  border-bottom: 1px solid #333;
+  margin-bottom: 2rem;
+}
+
+.modal-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.close-button:hover {
+  color: #fff;
+  background: #333;
+}
+
+.close-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.modal-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.job-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.meta-item {
+  background: linear-gradient(135deg, #333 0%, #222 100%);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.job-section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #fff;
+}
+
+.job-section p {
+  font-size: 1rem;
+  color: #d1d5db;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.job-section ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.job-section li {
+  font-size: 1rem;
+  color: #d1d5db;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Application Form */
+.application-form {
+  background: rgba(17, 17, 17, 0.5);
+  border: 1px solid #333;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.application-form h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.application-form label {
+  display: block;
+  font-size: 0.875rem;
+  color: #d1d5db;
+  margin-bottom: 0.5rem;
+}
+.application-form input,
+.application-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+.application-form input::placeholder,
+.application-form textarea::placeholder {
+  color: #9ca3af;
+}
+.application-form input:focus,
+.application-form textarea:focus {
+  border-color: #666;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+.application-form button {
+  background: linear-gradient(135deg, #333 0%, #222 100%);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.application-form button:hover {
+  background: linear-gradient(135deg, #444 0%, #333 100%);
+  transform: translateY(-2px);
+}
+.application-form button:disabled {
+  background: rgba(51, 51, 51, 0.5);
+  cursor: not-allowed;
+}
+.application-form .error {
+  color: #f87171;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+.application-form .success {
+  color: #34d399;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+/* Footer */

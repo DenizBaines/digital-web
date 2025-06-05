@@ -5,8 +5,8 @@ const Digital = () => {
   return (
     <div className="digital-container">
       <section className="hero">
-        <h1>We Create Digital Impact</h1>
-        <p>Design. Develop. Inspire. We shape digital experiences for tomorrow.</p>
+        <h1>We don't just market <br />We craft digital experiences.</h1>
+        <p>From strategy to storytelling, we help high-end brands show up, stand out, and scale.</p>
       </section>
 
       <section className="features">
@@ -27,7 +27,7 @@ const Digital = () => {
       <section className="showcase">
         <div className="image-block">
           <img src="images/proj1.jpg" alt="Digital Project 1" />
-          <p>Transforming eCommerce Experience</p>
+          <p>Transforming Ecommerce Experience</p>
         </div>
         <div className="image-block">
           <img src="images/proj2.jpg" alt="Digital Project 2" />

@@ -12,18 +12,39 @@ const Navbar = () => {
       const currentScrollPos = window.scrollY;
       setShowNavbar(prevScrollPos > currentScrollPos || currentScrollPos < 10);
       setPrevScrollPos(currentScrollPos);
+      
+      // Close menu when scrolling
+      if (menuOpen) {
+        setMenuOpen(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos]);
+  }, [prevScrollPos, menuOpen]);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuOpen && !event.target.closest('.navbar')) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [menuOpen]);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <nav className={`navbar ${showNavbar ? "visible" : "hidden"}`}>
       <div className="navbar-content">
-        <div className="logo">WHITE</div>
+        <Link to="/" className="logo" onClick={closeMenu}>
+          BLUE SAGE
+        </Link>
         <div className="menu" onClick={toggleMenu}>
           Menu
         </div>
@@ -31,17 +52,13 @@ const Navbar = () => {
 
       {menuOpen && (
         <div className="dropdown">
-         
-        
-         <Link to="/">Home</Link>
-         <Link to="/about">About Us</Link>
-         <Link to="/services">Services</Link>
-         <Link to="/clients">Clients & Projects</Link>
-         <Link to="/luxury">Luxury Study</Link>
-         <Link to="/contact">Contact</Link>
-
-
-
+          <Link to="/" onClick={closeMenu}>Home</Link>
+          <Link to="/about" onClick={closeMenu}>About Us</Link>
+          <Link to="/services" onClick={closeMenu}>Services</Link>
+          <Link to="/clients" onClick={closeMenu}>Clients & Projects</Link>
+          <Link to="/ourideology" onClick={closeMenu}>Our Ideology</Link>
+          
+          <Link to="/contact" onClick={closeMenu}>Contact</Link>
         </div>
       )}
     </nav>
