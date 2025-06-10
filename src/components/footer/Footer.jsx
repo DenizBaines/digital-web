@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="footer-info">
             <div className="footer-logo">
               <span>BLUE SAGE</span>
-              <small>communications</small>
+              <small>m e d i a</small>
             </div>
 
             <div className="footer-locations">
@@ -74,9 +74,7 @@ const Footer = () => {
               <Link to="/" aria-label="LinkedIn">
                 <i className="fa-brands fa-linkedin-in" />
               </Link>
-              <Link to="/" aria-label="YouTube">
-                <i className="fa-brands fa-youtube" />
-              </Link>
+              
               <Link to="/" aria-label="Facebook">
                 <i className="fa-brands fa-facebook-f" />
               </Link>
@@ -89,7 +87,7 @@ const Footer = () => {
           <div className="footer-links">
             <Link to="/career">Career ↗</Link>
             <Link to="/contact">Contact</Link>
-            <Link to="/imprint">Imprint</Link>
+            <Link to="/services">Services</Link>
             <Link to="/terms">Terms & Conditions</Link>
             <Link to="/privacy">Privacy Policy</Link>
           </div>

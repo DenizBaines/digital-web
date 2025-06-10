@@ -29,8 +29,8 @@ const OurIdeology = () => {
     <div className="ideology-page">
       {/* Hero Section */}
       <section className="ideology-hero" ref={heroRef}>
-        <div className="hero-background">
-          <div className="gradient-overlay"></div>
+        <div className="h">
+          <div className="s"></div>
         </div>
         <div className="hero-content">
           <h1 className="hero-title">
@@ -51,10 +51,10 @@ const OurIdeology = () => {
       <section className="ideology-content" ref={contentRef}>
         <div className="content-container">
           <div className="quote-section">
-            <blockquote className="main-quote">
+            <div className="main-quote">
               "We believe elevated storytelling creates unforgettable brands. 
               Refined strategy, thoughtful design, and powerful content—crafted with intention."
-            </blockquote>
+            </div>
           </div>
 
           <div className="philosophy-grid">

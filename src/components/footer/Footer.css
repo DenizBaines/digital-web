@@ -1,6 +1,6 @@
 .footer {
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
   padding: 5rem 2rem 3rem;
   font-family: 'Inter', 'Helvetica Neue', sans-serif;
   position: relative;
@@ -40,7 +40,7 @@
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: 0.15rem;
-  background: linear-gradient(135deg, #fff 0%, #ccc 100%);
+  background: #1D49AF;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -54,7 +54,7 @@
   margin-top: -0.2rem;
   letter-spacing: 0.05rem;
   opacity: 0.8;
-  background: linear-gradient(135deg, #ccc 0%, #999 100%);
+  background: #000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -177,7 +177,7 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  color: white;
+  color: #1D49AF;
   font-size: 1.1rem;
   opacity: 0.7;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -203,7 +203,7 @@
 }
 
 .footer-links a {
-  color: white;
+  color: #1D49AF;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;

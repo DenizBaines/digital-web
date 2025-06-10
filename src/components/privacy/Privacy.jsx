@@ -165,7 +165,7 @@ const Privacy = () => {
       {/* Hero Section */}
       <section className="privacy-hero" ref={heroRef}>
         <div className="hero-background">
-          <div className="gradient-overlay"></div>
+          <div className="gradient-overlayy"></div>
         </div>
         <div className="hero-content">
           <h1 className="hero-title">Privacy Policy</h1>
