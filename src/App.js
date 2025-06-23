@@ -4,17 +4,33 @@ import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import OurIdeology from './components/ourideology/OurIdeology';
 import Services from './components/services/Services';
 import Privacy from './components/privacy/Privacy';
 import Career from './components/career/Career';
 import Terms from './components/terms/Terms';
+import { initGA, logPageView } from './utils/analytics';
+
+const RouteChangeTracker = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    logPageView();
+  }, [location]);
+  return null;
+};
 
 function App() {
+  
+  useEffect(() => {
+    initGA(); // Initialize Google Analytics
+  }, []);
+  
   return (
     <Router> {/* ✅ ONLY ONE Router */}
+      <RouteChangeTracker /> {/* Track route changes */}
       <Navbar />
       <div className="App">
        

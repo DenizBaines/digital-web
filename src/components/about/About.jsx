@@ -10,7 +10,7 @@ const About = () => {
         <div className="hero-container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1 className="hero-title">ABOUT US</h1>
+              <h1 className="hero-titlee">ABOUT US</h1>
               <div className="title-divider"></div>
               <h2 className="hero-subtitle">PROFESSIONAL. PERSONAL. PRECISE.</h2>
               <p className="hero-description">

@@ -45,17 +45,17 @@
   text-align: justify;
 }
 
-.hero-title {
+.hero-titlee {
   font-size: clamp(2.5rem, 5vw, 5rem);
   font-weight: 300;
   letter-spacing: -0.02em;
   margin: 0;
   line-height: 1.1;
-  background: white;
+  background: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-align: left;
+  text-align: center;
 }
 
 .title-divider {

@@ -125,7 +125,7 @@ html, body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .hero p,
@@ -137,3 +137,23 @@ html, body {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 564px) {
+  .hero h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero p,
+  .cta h2 {
+    font-size: 1rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase {
+    grid-template-columns: 1fr;
+  }
+}
+/* End of Digital.css */
